@@ -1,0 +1,23 @@
+\chapter{Appendix}
+
+\section{Showcase Video}\label{apx:video}
+
+I recorded a short video showcasing my work. I uploaded the video to YouTube and it can be found at \url{https://youtu.be/wArK9bmHatM}.
+
+\section{Source Code}
+
+The code written for this thesis is included within the Object Tracker code repository. It includes a section within the Readme with instructions on how to set it up and how to build and run it.
+
+Since the code of the Object Tracker is proprietary, its Github repository is private and the code will not be released to the public. However the Sensor API part of the code (see sec. \ref{sec:sensorapi}) is designed to be compatible with any HoloLens 2 application using Research Mode and can be provided to interested parties.
+
+\section{Transformation Matrix Naming Convention}\label{apx:naming}
+
+The transformation matrices in this thesis follow the simple convention that $T_{AB}$ is a transformation matrix which transforms a vector from the coordinate system $B$ into the coordinate system $A$, i.e.:
+
+\begin{equation*}
+    x_A = T_{AB} * x_B
+\end{equation*}
+
+where $x_B$ is a vector in coordinate system $B$ and $x_A$ is the corresponding vector in coordinate system $A$.
+
+Similarly $R_{AB}$ denotes a rotation matrix from coordinate system $B$ into the coordinate system $A$.

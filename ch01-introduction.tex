@@ -1,0 +1,16 @@
+% set counter to n-1:
+\setcounter{chapter}{0}
+
+\chapter{Introduction}
+
+In our world today we rely more and more on algorithms to help us achieve our goals. We use auto-correction to avoid typos in our text messages, we let Netflix suggest the best matching movies dependent on our tastes to us and we rely on robots to run fully automated assembly lines to produce everyday products. However, all these examples have in common that they run in well defined ecosystems where most external parameters can be controlled and the remaining ones can be accounted for. As soon as we try to tackle problems where it is not possible to control most external factors, we need more robust algorithms which are naturally harder to develop.
+
+One such problem is the construction of complex structures in unknown environments such as building sites. In \cite{ViObjectTracker} the authors propose a framework which enables real-time tracking of a sensor-head relative to multiple objects and use it to help constructing complex brick structures by hand. In this thesis, I will build on this work and incorporate the existing code into a mixed reality application which can be run on a mixed reality headset. This allows for easy use without the need of holding a camera and other sensors.
+
+\section{Mixed Reality}
+
+The field of computer vision concerns itself with algorithms analysing images and videos to extract as much information as possible about the depicted three-dimensional environment. Within computer vision, mixed reality is a very active area of research. While virtual reality creates a virtual three-dimensional space in which the user can move around and interact with objects, mixed reality incorporates virtual elements into the real world and lets virtual and real objects interact with each other and the user. Its applications range from video games to semi-virtual meetings to supporting surgeons by visualizing CT scans.
+
+Specifically developed headsets are used to provide the most immersive mixed reality experience. One such headset is the HoloLens which was first launched in 2016 by Microsoft and its successor the HoloLens 2, launched in 2019. Equipped with state of the art sensors to allow for spatial orientation as well as fully articulated hand tracking and eye gaze tracking, the HoloLens 2 is able to run complex programs, helping the user perform various tasks \cite{HololensHardware}. 
+
+In this thesis I make use of the low level sensor streams of the HoloLens 2 available via Resarch Mode~\cite{ResearchMode} to provide the aforementioned code with the sensor data streams it requires. I also build a small application which visualizes the state of the Object Tracker and enables the user to interact with it.
